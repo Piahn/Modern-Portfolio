@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Contact = () => {
-
+const formAction = process.env.FROM;
 const socialLinks = [
     {
         href: 'https://www.github.com/codewithsadee-org',
@@ -31,7 +31,7 @@ const socialLinks = [
         </svg>,
         alt: 'Instagram'
     },
-    ];
+];
 
   return (
     <section
@@ -58,7 +58,7 @@ const socialLinks = [
                 </div>
             </div>
 
-            <form action="https://getform.io/f/bwnnooya" method='POST' className='xl:pl-10 2xl:pl-20'>
+            <form action={formAction} method='POST' className='xl:pl-10 2xl:pl-20'>
 
                 <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
                     <div className="mb-4">
